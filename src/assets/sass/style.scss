@@ -1,0 +1,53 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Default styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.myTable {
+    padding-top: 20px;
+    td {
+        cursor: pointer;
+    }
+}
+
+.myTableTest {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#myTable {
+    margin-bottom: 15px;
+}
+
+.tbody {
+    text-align: center;
+}
+
+.detailed-info {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    line-height: 1.5;
+}
+
+.select {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4287f5;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Blocks */
