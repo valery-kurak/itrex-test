@@ -5,7 +5,16 @@ title: HomePage
 
 <section class="content">
 
-  <table id="myTable" class="myTable  cell-border  hover">
+  <div class="upper-menu">
+    <input type="text" id="myInput" class="myInput" onkeyup="searchByName()" placeholder="Search by name: " title="Type in a name">
+    <label for="mySelect"></label>
+    <select name="mySelect" onchange="searchByState()" class="select" id="mySelect">
+      <option value="">Filter by State</option>
+    </select>
+  </div>
+
+
+  <table id="myTable" class="myTable">
 
     <thead>
     <tr>
@@ -22,18 +31,9 @@ title: HomePage
 
     </tbody>
 
-    <tfoot>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-    </tfoot>
-
   </table>
+
+  <div class="nav-test"></div>
 
   <section class="detailed-info">
     <p>Profile Info:</p>

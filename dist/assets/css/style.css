@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Default styles */
 body {
@@ -9,26 +11,50 @@ body {
     padding: 20px;
 }
 
+.tbody tr:hover {
+    background-color: #e8e8e8;
+}
+
 .myTable {
     padding-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .myTable td {
     cursor: pointer;
 }
 
-.myTableTest {
-    width: 100%;
-    padding: 20px;
+.myTable td, .myTable th {
+    border: 1px solid #dddddd;
     text-align: center;
+    padding: 10px;
 }
 
-#myTable {
-    margin-bottom: 15px;
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
 }
 
-.tbody {
-    text-align: center;
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+    content: "▼";
+}
+
+th.sorted[data-order="1"]::after {
+    content: "▲";
+}
+
+.myInput {
+    width: 25%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .detailed-info {
@@ -46,6 +72,38 @@ body {
     background-color: #4287f5;
     cursor: pointer;
     text-align: center;
+}
+
+.upper-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pager {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.pager span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8;
+    text-align: center;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+.pager span.active {
+    background: #c00;
 }
 
 /* Blocks */
